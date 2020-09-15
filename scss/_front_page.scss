@@ -1,0 +1,162 @@
+@import 'variables';
+
+.cover-image{
+    max-width: 996px;
+    width: 100%;
+    margin: auto;
+    padding-bottom: 75px;
+
+    .image{
+        margin: auto;
+    }
+}
+
+
+.arrow-show{
+  position: relative;
+}
+.arow-div{
+  
+position:absolute;
+top:-14px;
+left:76px;
+width:34px;
+height:34px;
+z-index: 20000;
+box-shadow: 13px -12px 15px -10px rgba(133,133,133,.5);
+transform:rotate(-45deg);
+background:white;
+border-top-right-radius:10px;
+}
+
+.main-buttons{
+cursor: pointer;
+margin-bottom: 30px;
+display: flex;
+padding:10px 20px;
+font-size:17px;
+align-items: center;
+background:white;
+border-radius: 10px;
+filter: drop-shadow(0px 2px 0px rgba(158, 158, 158, 0.5));
+border: 1px solid $grey-1_color;
+color:$primary_color;
+font-weight: bold;
+transition: .4s ease-in-out;
+min-width: 285px;
+text-decoration: none;
+display: inline-block;
+}
+p{
+font-family: $Noto-Sans;
+font-style: normal;
+font-weight: normal;
+font-size: 15px;
+line-height: 25px;
+/* or 167% */
+
+
+letter-spacing: 0.03em;
+font-feature-settings: 'pnum' on, 'lnum' on;
+
+/* Text (D) 1 */
+
+color: $grey-4_color;
+}
+.heading{
+color: $primary_color;
+font-family:$Noto-Sans;
+font-style: normal;
+font-weight: 500;
+font-size: 26px;
+line-height: 25px;
+/* or 96% */
+
+text-align: center;
+letter-spacing: 0.05em;
+font-feature-settings: 'pnum' on, 'lnum' on;
+}
+.greyline{
+width:70%;
+height:1px;
+background-color:$grey-1_color;
+margin:70px 0;
+}
+.oddbtns{
+display: flex;
+flex-wrap: wrap;
+align-items: start;
+justify-content: space-between;
+}
+.main-buttons:hover{
+transform: scale(1.1);
+text-decoration: none;
+
+}
+.mainpara{
+margin-top: 15px;
+}
+@media(max-width:767px){
+.main-buttons{
+  min-width:90%;
+}
+.main-buttons:nth-child(1){
+  margin-top: 30px;
+}
+.main-buttons:hover{
+  transform: scale(1.02);
+}
+.greyline{
+  width:100vw;
+}
+.button-row{
+display: flex;
+flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  
+}
+.oddbtns{
+  margin:auto;
+  align-items: center;
+  justify-content: center;
+}
+.reverse-row{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column-reverse;
+  text-align: center;
+}
+}
+@media(min-width:1180px){
+.title-col{
+margin:auto;
+transform: translateX(38px);
+}
+.title-col2{
+transform: translateX(-50px);
+}
+.button-row{
+transform: translateX(40px);
+}
+.subscribe-div{
+transform: translateX(-60px);
+}
+
+}
+@media(min-width:768px){
+.mainpara{
+  max-width:95%;
+
+}
+
+}
+@media(max-width:393px){
+p{
+  font-size:14px;
+}
+h3{
+  font-size:16px;
+  
+}
+}
